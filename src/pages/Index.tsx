@@ -1,12 +1,29 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import AuroraBackground from '@/components/AuroraBackground';
+import HeroSection from '@/components/HeroSection';
+import SkillsSection from '@/components/SkillsSection';
+import WorkspaceSection from '@/components/WorkspaceSection';
+import HobbiesSection from '@/components/HobbiesSection';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background text-foreground relative overflow-x-hidden">
+      <AuroraBackground />
+      
+      <main className="relative z-10">
+        <HeroSection />
+        <SkillsSection />
+        <WorkspaceSection />
+        <HobbiesSection />
+        
+        {/* Footer */}
+        <footer className="py-12 text-center border-t border-white/10">
+          <div className="glass-card inline-block px-8 py-4 rounded-full border border-white/10">
+            <p className="text-muted-foreground">
+              Made with 💖 and lots of ☕ by Ciara
+            </p>
+          </div>
+        </footer>
+      </main>
     </div>
   );
 };
