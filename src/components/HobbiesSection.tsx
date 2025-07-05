@@ -1,9 +1,15 @@
 import { motion } from 'framer-motion';
+import robotImage from '@/assets/robot.jpg';
+import valorantImage from '@/assets/valorant-poster.jpg';
+import tftImage from '@/assets/tft-character.jpg';
+import childImage from '@/assets/child-beach.jpg';
+import realWhiteCat from '@/assets/real-white-cat.jpg';
 
 const hobbies = [
   {
     title: 'Robots',
     icon: '🤖',
+    image: robotImage,
     description: 'Fascinated by robotics and AI technology',
     color: 'aurora-blue',
     bgGradient: 'from-aurora-blue/20 to-aurora-cyan/20'
@@ -11,6 +17,7 @@ const hobbies = [
   {
     title: 'Cats',
     icon: '🐱',
+    image: realWhiteCat,
     description: 'Cat lover and proud parent of three furry friends',
     color: 'aurora-purple',
     bgGradient: 'from-aurora-purple/20 to-aurora-pink/20'
@@ -18,6 +25,7 @@ const hobbies = [
   {
     title: 'Children',
     icon: '👶',
+    image: childImage,
     description: 'Enjoy spending time with kids and their creativity',
     color: 'aurora-green',
     bgGradient: 'from-aurora-green/20 to-aurora-cyan/20'
@@ -25,6 +33,7 @@ const hobbies = [
   {
     title: 'Valorant',
     icon: '🎯',
+    image: valorantImage,
     description: 'Tactical FPS gaming and strategic thinking',
     color: 'aurora-cyan',
     bgGradient: 'from-aurora-cyan/20 to-aurora-blue/20'
@@ -32,6 +41,7 @@ const hobbies = [
   {
     title: 'TFT',
     icon: '♟️',
+    image: tftImage,
     description: 'Teamfight Tactics - strategy and planning',
     color: 'aurora-pink',
     bgGradient: 'from-aurora-pink/20 to-aurora-purple/20'
@@ -72,8 +82,16 @@ export default function HobbiesSection() {
               <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-white/5 to-transparent rounded-bl-3xl" />
               
               <div className="relative z-10">
-                <div className="text-4xl mb-4 transform group-hover:scale-110 transition-transform duration-300">
-                  {hobby.icon}
+                <div className="relative mb-4 overflow-hidden rounded-lg h-32">
+                  <img 
+                    src={hobby.image} 
+                    alt={hobby.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                  <div className="absolute top-2 left-2 text-2xl transform group-hover:scale-110 transition-transform duration-300">
+                    {hobby.icon}
+                  </div>
                 </div>
                 
                 <h3 className="text-xl font-bold mb-2 text-primary">

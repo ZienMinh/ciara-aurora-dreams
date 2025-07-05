@@ -1,24 +1,24 @@
 import { motion } from 'framer-motion';
-import tabbyCat from '@/assets/tabby-cat.jpg';
-import goldenBlueCat from '@/assets/golden-blue-cat.jpg';
-import whiteCat from '@/assets/white-cat.jpg';
+import realTabbyCat from '@/assets/real-tabby-cat.jpg';
+import realGoldenCat from '@/assets/real-golden-cat.jpg';
+import realWhiteCat from '@/assets/real-white-cat.jpg';
 
 const cats = [
   {
     name: 'Luna (Tabby)',
-    image: tabbyCat,
+    image: realTabbyCat,
     description: 'Gray tabby with emerald green eyes',
     color: 'aurora-green'
   },
   {
     name: 'Azure (Golden Blue)',
-    image: goldenBlueCat,
+    image: realGoldenCat,
     description: 'Golden-blue gray with amber eyes',
     color: 'aurora-cyan'
   },
   {
     name: 'Snow (Long-haired)',
-    image: whiteCat,
+    image: realWhiteCat,
     description: 'White fluffy cat with sapphire blue eyes',
     color: 'aurora-blue'
   }

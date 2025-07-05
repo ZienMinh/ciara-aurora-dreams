@@ -1,5 +1,6 @@
 import AuroraBackground from '@/components/AuroraBackground';
 import HeroSection from '@/components/HeroSection';
+import Hero3DSection from '@/components/Hero3DSection';
 import SkillsSection from '@/components/SkillsSection';
 import WorkspaceSection from '@/components/WorkspaceSection';
 import HobbiesSection from '@/components/HobbiesSection';
@@ -11,6 +12,7 @@ const Index = () => {
       
       <main className="relative z-10">
         <HeroSection />
+        <Hero3DSection />
         <SkillsSection />
         <WorkspaceSection />
         <HobbiesSection />
